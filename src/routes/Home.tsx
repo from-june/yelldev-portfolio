@@ -21,44 +21,44 @@ const YellImg = styled.img<IYellImg>`
   height: 200px;
   border-radius: 50%;
   margin: 0 auto;
-  margin-bottom: 30px;
+  margin-bottom: 24px;
 `;
 
 const underline = keyframes`
   0% {
     width: 0;
   } 100% {
-    width: 58%;
+    width: 61%;
   }
 `;
 
 const Description = styled.p`
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: 'Black Han Sans', sans-serif;
   color: ${props => props.theme.textColor};
-  font-size: 2.4rem;
-  font-weight: 300;
-  letter-spacing: -0.1em;
-  line-height: 1.5;
+  font-size: 3.8rem;
+  font-weight: 400;
+  letter-spacing: -0.05em;
+  line-height: 1.2;
   text-align: center;
 
   span:nth-child(2) {
-    font-weight: 700;
+    font-size: 4.2rem;
     color: ${props => props.theme.mintColor};
   }
 
   span:last-child {
-    font-weight: 700;
-    font-size: 3.2rem;
+    font-size: 4.8rem;
     color: ${props => props.theme.yellowColor};
   }
 
   ::after {
     display: block;
     content: '';
-    width: 58%;
-    height: 3px;
+    width: 61%;
+    height: 5px;
     position: relative;
-    margin-left: 45px;
+    margin-top: -10px;
+    margin-left: 60px;
     background-color: ${props => props.theme.yellowColor};
     border-radius: 3px;
     animation: ${underline} 3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
