@@ -1,3 +1,4 @@
+import { useLocation } from 'react-router-dom';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
@@ -40,21 +41,31 @@ const HeaderList = styled.ul`
   font-size: 1.8rem;
   font-family: 'Nunito Sans', sans-serif;
   font-weight: 300;
-  color: #999;
   margin-right: auto;
 `;
 
-const HeaderItem = styled.li`
-  :hover {
-    color: ${props => props.theme.mintColor};
-  }
+const HeaderItem = styled.li<{ isActive: boolean }>`
+  width: 100%;
+  height: 50px;
 
-  &:not(:last-child) {
-    margin-right: 32px;
+  a {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: ${props =>
+      props.isActive ? props.theme.mintColor : props.theme.textColor};
+    margin-left: 32px;
+
+    :hover {
+      color: ${props => props.theme.mintColor};
+    }
   }
 `;
 
 const Header = () => {
+  const { pathname } = useLocation();
+
   return (
     <HeaderContainer>
       <Link to="/">
@@ -65,13 +76,13 @@ const Header = () => {
       </Link>
 
       <HeaderList>
-        <HeaderItem>
+        <HeaderItem isActive={pathname === '/about'}>
           <Link to="/about">about</Link>
         </HeaderItem>
-        <HeaderItem>
+        <HeaderItem isActive={pathname === '/projects'}>
           <Link to="/projects">projects</Link>
         </HeaderItem>
-        <HeaderItem>
+        <HeaderItem isActive={pathname === '/contact'}>
           <Link to="/contact">contact</Link>
         </HeaderItem>
       </HeaderList>
