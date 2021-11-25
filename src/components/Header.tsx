@@ -1,7 +1,7 @@
 import styled from 'styled-components';
-import yellAvatar from 'images/yell.png';
 
 const HeaderContainer = styled.header`
+  position: sticky;
   display: flex;
   align-items: center;
   padding: 8px 32px;
@@ -14,7 +14,7 @@ const YellContainer = styled.div`
 `;
 
 const Yell = styled.h1`
-  color: #ffc000;
+  color: ${props => props.theme.yellowColor};
   font-size: 4rem;
   font-family: 'Nunito Sans', sans-serif;
   font-weight: 900;
@@ -31,7 +31,7 @@ const Dot = styled.div`
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background-color: #1bb991;
+  background-color: ${props => props.theme.mintColor};
 `;
 
 const HeaderList = styled.ul`
@@ -45,21 +45,12 @@ const HeaderList = styled.ul`
 
 const HeaderItem = styled.li`
   :hover {
-    color: #1bb991;
+    color: ${props => props.theme.mintColor};
   }
 
   &:not(:last-child) {
     margin-right: 32px;
   }
-`;
-
-const Avatar = styled.img`
-  display: block;
-  width: 40px;
-  height: 40px;
-  padding: 3px;
-  border-radius: 50%;
-  border: 1px solid #ffc000;
 `;
 
 const Header = () => {
@@ -75,7 +66,6 @@ const Header = () => {
         <HeaderItem>projects</HeaderItem>
         <HeaderItem>contact</HeaderItem>
       </HeaderList>
-      <Avatar src={yellAvatar} alt="옐" />
     </HeaderContainer>
   );
 };
