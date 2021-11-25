@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 const HeaderContainer = styled.header`
   position: sticky;
@@ -56,15 +57,23 @@ const HeaderItem = styled.li`
 const Header = () => {
   return (
     <HeaderContainer>
-      <YellContainer>
-        <Yell>yell</Yell>
-        <Dot />
-      </YellContainer>
+      <Link to="/">
+        <YellContainer>
+          <Yell>yell</Yell>
+          <Dot />
+        </YellContainer>
+      </Link>
 
       <HeaderList>
-        <HeaderItem>about</HeaderItem>
-        <HeaderItem>projects</HeaderItem>
-        <HeaderItem>contact</HeaderItem>
+        <HeaderItem>
+          <Link to="/about">about</Link>
+        </HeaderItem>
+        <HeaderItem>
+          <Link to="/projects">projects</Link>
+        </HeaderItem>
+        <HeaderItem>
+          <Link to="/contact">contact</Link>
+        </HeaderItem>
       </HeaderList>
     </HeaderContainer>
   );
