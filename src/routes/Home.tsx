@@ -1,5 +1,5 @@
 import yellAvatar from 'images/yell.png';
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 
 const Container = styled.div`
   width: 100vw;
@@ -24,6 +24,14 @@ const YellImg = styled.img<IYellImg>`
   margin-bottom: 30px;
 `;
 
+const underline = keyframes`
+  0% {
+    width: 0;
+  } 100% {
+    width: 58%;
+  }
+`;
+
 const Description = styled.p`
   font-family: 'Noto Sans KR', sans-serif;
   color: ${props => props.theme.textColor};
@@ -42,6 +50,18 @@ const Description = styled.p`
     font-weight: 700;
     font-size: 3.2rem;
     color: ${props => props.theme.yellowColor};
+  }
+
+  ::after {
+    display: block;
+    content: '';
+    width: 58%;
+    height: 3px;
+    position: relative;
+    margin-left: 45px;
+    background-color: ${props => props.theme.yellowColor};
+    border-radius: 3px;
+    animation: ${underline} 3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   }
 `;
 
