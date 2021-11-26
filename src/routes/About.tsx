@@ -1,31 +1,20 @@
 import styled from 'styled-components';
 import yellAbout from 'images/about_yell.png';
 import Markdown from 'components/Markdown';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithubSquare, faBlogger } from '@fortawesome/free-brands-svg-icons';
 
 const AboutContainer = styled.div`
-  width: 100vw;
-  height: calc(100vh - 70px);
   padding: 64px 128px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
-  overflow: auto;
-
-  ::-webkit-scrollbar {
-    width: 8px;
-  }
-
-  ::-webkit-scrollbar-thumb {
-    border: 8px solid ${props => props.theme.color.yellowColor};
-    border-radius: 10px;
-    background: ${props => props.theme.color.yellowColor};
-    background-clip: padding-box;
-  }
 `;
 
 const ImgContainer = styled.div`
   position: relative;
-  margin-right: 64px;
+  margin-right: 96px;
 `;
 
 interface IYellImg {
@@ -38,13 +27,14 @@ const YellImg = styled.img<IYellImg>`
   width: 250px;
   height: auto;
   position: relative;
+  left: 29px;
   z-index: 2;
+  margin-bottom: 64px;
 `;
 
 const ImgBack = styled.div`
   position: absolute;
   top: 50px;
-  left: -29px;
   display: block;
   content: '';
   width: 260px;
@@ -63,6 +53,30 @@ const ImgBack = styled.div`
     height: 150px;
     border-radius: 50%;
     background-color: ${props => props.theme.color.mintColor};
+  }
+`;
+
+const YellName = styled.p`
+  margin-bottom: 4px;
+  padding-top: 8px;
+  color: ${props => props.theme.color.yellowColor};
+  border-top: 1px solid ${props => props.theme.color.textColor};
+  font-family: ${props => props.theme.font.enFont};
+  font-size: 3.2rem;
+  font-style: italic;
+  font-weight: 900;
+  text-align: center;
+`;
+
+const IconContainer = styled.div`
+  text-align: center;
+
+  svg:hover {
+    color: ${props => props.theme.color.mintColor};
+  }
+
+  svg:first-child {
+    margin-right: 4px;
   }
 `;
 
@@ -91,7 +105,7 @@ const AboutTitle = styled.p`
 `;
 
 const AboutYell = styled.p`
-  width: 482px;
+  max-width: 482px;
   font-size: 1.8rem;
   font-weight: 300;
   letter-spacing: -0.1em;
@@ -113,6 +127,23 @@ const About = () => {
       <ImgContainer>
         <YellImg src={yellAbout} alt="옐" />
         <ImgBack />
+        <YellName>yell</YellName>
+        <IconContainer>
+          <a
+            href="https://github.com/pak-fuse"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FontAwesomeIcon icon={faGithubSquare} size="6x" />
+          </a>
+          <a
+            href="https://pak-fuse.tistory.com/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FontAwesomeIcon icon={faBlogger} size="6x" />
+          </a>
+        </IconContainer>
       </ImgContainer>
       <ContentsContainer>
         <AboutDescription>
