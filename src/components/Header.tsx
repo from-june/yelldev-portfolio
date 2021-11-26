@@ -5,9 +5,16 @@ import { Link } from 'react-router-dom';
 const HeaderContainer = styled.header`
   position: sticky;
   display: flex;
+  justify-content: center;
   align-items: center;
   padding: 8px 32px;
   background-color: rgba(255, 255, 255, 0.8);
+
+  & > div {
+    max-width: 1440px;
+    width: 100%;
+    display: flex;
+  }
 `;
 
 const YellContainer = styled.div`
@@ -70,24 +77,26 @@ const Header = () => {
 
   return (
     <HeaderContainer>
-      <Link to="/">
-        <YellContainer>
-          <Yell>yell</Yell>
-          <Dot />
-        </YellContainer>
-      </Link>
+      <div>
+        <Link to="/">
+          <YellContainer>
+            <Yell>yell</Yell>
+            <Dot />
+          </YellContainer>
+        </Link>
 
-      <HeaderList>
-        <HeaderItem isActive={pathname === '/about'}>
-          <Link to="/about">about</Link>
-        </HeaderItem>
-        <HeaderItem isActive={pathname === '/projects'}>
-          <Link to="/projects">projects</Link>
-        </HeaderItem>
-        <HeaderItem isActive={pathname === '/contact'}>
-          <Link to="/contact">contact</Link>
-        </HeaderItem>
-      </HeaderList>
+        <HeaderList>
+          <HeaderItem isActive={pathname === '/about'}>
+            <Link to="/about">about</Link>
+          </HeaderItem>
+          <HeaderItem isActive={pathname === '/projects'}>
+            <Link to="/projects">projects</Link>
+          </HeaderItem>
+          <HeaderItem isActive={pathname === '/contact'}>
+            <Link to="/contact">contact</Link>
+          </HeaderItem>
+        </HeaderList>
+      </div>
     </HeaderContainer>
   );
 };
