@@ -109,6 +109,11 @@ const Icons = styled.div`
   a:last-child {
     margin-left: 4px;
   }
+
+  @media only screen and (max-width: ${props =>
+      props.theme.media.breakPoint460}px) {
+    right: 16px;
+  }
 `;
 
 const ProjectContent = ({
