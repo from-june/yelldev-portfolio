@@ -8,7 +8,9 @@ const GlobalStyles = createGlobalStyle`
 
 html,body{
   font-size: 62.5%;
-  background-color: ${props => props.theme.bgColor}
+  font-family: ${props => props.theme.font.nomalFont};
+  color: ${props => props.theme.color.textColor};
+  background-color: ${props => props.theme.color.bgColor};
 }
 
 html, body, div, span, applet, object, iframe,

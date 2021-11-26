@@ -2,9 +2,17 @@ import 'styled-components';
 
 declare module 'styled-components' {
   export interface DefaultTheme {
-    yellowColor: string;
-    mintColor: string;
-    textColor: string;
-    bgColor: string;
+    color: {
+      yellowColor: string;
+      mintColor: string;
+      textColor: string;
+      bgColor: string;
+    };
+
+    font: {
+      nomalFont: string;
+      boldFont: string;
+      enFont: string;
+    };
   }
 }

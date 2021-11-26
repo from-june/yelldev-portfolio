@@ -33,8 +33,7 @@ const underline = keyframes`
 `;
 
 const Description = styled.p`
-  font-family: 'Black Han Sans', sans-serif;
-  color: ${props => props.theme.textColor};
+  font-family: ${props => props.theme.font.boldFont};
   font-size: 3.8rem;
   font-weight: 400;
   letter-spacing: -0.05em;
@@ -43,12 +42,12 @@ const Description = styled.p`
 
   span:nth-child(2) {
     font-size: 4.2rem;
-    color: ${props => props.theme.mintColor};
+    color: ${props => props.theme.color.mintColor};
   }
 
   span:last-child {
     font-size: 4.8rem;
-    color: ${props => props.theme.yellowColor};
+    color: ${props => props.theme.color.yellowColor};
   }
 
   ::after {
@@ -59,7 +58,7 @@ const Description = styled.p`
     position: relative;
     margin-top: -10px;
     margin-left: 60px;
-    background-color: ${props => props.theme.yellowColor};
+    background-color: ${props => props.theme.color.yellowColor};
     border-radius: 3px;
     animation: ${underline} 3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   }

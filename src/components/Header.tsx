@@ -16,9 +16,9 @@ const YellContainer = styled.div`
 `;
 
 const Yell = styled.h1`
-  color: ${props => props.theme.yellowColor};
+  color: ${props => props.theme.color.yellowColor};
   font-size: 4rem;
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: ${props => props.theme.font.enFont};
   font-weight: 900;
   font-style: italic;
   margin-right: 5px;
@@ -33,13 +33,13 @@ const Dot = styled.div`
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background-color: ${props => props.theme.mintColor};
+  background-color: ${props => props.theme.color.mintColor};
 `;
 
 const HeaderList = styled.ul`
   display: flex;
   font-size: 1.8rem;
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: ${props => props.theme.font.enFont};
   font-weight: 300;
   margin-right: auto;
 `;
@@ -54,11 +54,13 @@ const HeaderItem = styled.li<{ isActive: boolean }>`
     width: 100%;
     height: 100%;
     color: ${props =>
-      props.isActive ? props.theme.mintColor : props.theme.textColor};
+      props.isActive
+        ? props.theme.color.mintColor
+        : props.theme.color.textColor};
     margin-left: 32px;
 
     :hover {
-      color: ${props => props.theme.mintColor};
+      color: ${props => props.theme.color.mintColor};
     }
   }
 `;
