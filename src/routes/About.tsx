@@ -10,11 +10,28 @@ const AboutContainer = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
+
+  @media only screen and (max-width: ${props =>
+      props.theme.media.breakPoint1115}px) {
+    flex-direction: column;
+    align-items: center;
+    padding: 64px;
+  }
+
+  @media only screen and (max-width: ${props =>
+      props.theme.media.breakPoint650}px) {
+    padding: 32px;
+  }
 `;
 
 const ImgContainer = styled.div`
   position: relative;
   margin-right: 96px;
+
+  @media only screen and (max-width: ${props =>
+      props.theme.media.breakPoint1115}px) {
+    margin-right: 0;
+  }
 `;
 
 interface IYellImg {

@@ -2,7 +2,7 @@ import yellAvatar from 'images/yell.png';
 import styled, { keyframes } from 'styled-components';
 
 const Container = styled.div`
-  width: 100vw;
+  width: 100%;
   height: calc(100vh - 70px);
   display: flex;
   flex-direction: column;
@@ -61,6 +61,24 @@ const Description = styled.p`
     background-color: ${props => props.theme.color.yellowColor};
     border-radius: 3px;
     animation: ${underline} 3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+
+  @media only screen and (max-width: ${props =>
+      props.theme.media.breakPoint650}px) {
+    font-size: 2.8rem;
+
+    span:nth-child(2) {
+      font-size: 3.2rem;
+    }
+
+    span:last-child {
+      font-size: 3.8rem;
+    }
+
+    ::after {
+      width: 64%;
+      margin-left: 38px;
+    }
   }
 `;
 

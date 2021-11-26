@@ -1,4 +1,5 @@
 import { DefaultTheme } from 'styled-components';
+import media from 'styles/media';
 
 export const theme: DefaultTheme = {
   color: {
@@ -13,5 +14,10 @@ export const theme: DefaultTheme = {
     nomalFont: `'Noto Sans KR', sans-serif;`,
     boldFont: `'Black Han Sans', sans-serif;`,
     enFont: `'Nunito Sans', sans-serif;`
+  },
+
+  media: {
+    breakPoint650: 650,
+    breakPoint1115: 1115
   }
 };

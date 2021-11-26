@@ -15,5 +15,10 @@ declare module 'styled-components' {
       boldFont: string;
       enFont: string;
     };
+
+    media: {
+      breakPoint650: number;
+      breakPoint1115: number;
+    };
   }
 }
