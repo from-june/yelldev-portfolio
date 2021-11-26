@@ -151,6 +151,9 @@ const About = () => {
             안녕하세요. <span>옐</span> 입니다!
           </AboutTitle>
           <AboutYell>
+            본명은 <strong>박주운</strong> 입니다.
+            <br />
+            <br />
             개발의 여러 분야 중에서도 <strong>프론트엔드를 택한 것</strong>은,
             <br />
             <strong>눈으로 보이는 결과물</strong>을 만드는 것이 좋았기
