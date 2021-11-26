@@ -19,7 +19,7 @@ const ProjectsData = [
     id: 2,
     title: '웨이비 : Waveyy',
     img_src: `${waveyy}`,
-    hashtags: ['ReactJs', 'Styled-components', 'React Hook'],
+    hashtags: ['React', 'Styled-components', 'React Hook'],
     description:
       'The Movie Database API를 이용하여 최신 인기상영작과 티비프로그램을 확인할 수 있으며 원하는 작품을 검색할 수 있는 웹사이트',
     links: {
@@ -31,7 +31,7 @@ const ProjectsData = [
     id: 3,
     title: 'Clone Twitter',
     img_src: `${cloneTwitter}`,
-    hashtags: ['ReactJs', 'CSS', 'Firebase'],
+    hashtags: ['React', 'CSS', 'Firebase'],
     description: 'SNS인 트위터의 기능을 일부 구현하여 만든 웹사이트 ',
     links: {
       web: 'https://pak-fuse.github.io/react-clone-twitter/',
