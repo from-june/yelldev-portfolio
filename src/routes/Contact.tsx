@@ -51,7 +51,7 @@ const Contact = () => {
         아래 <strong>이메일</strong>로 연락 바랍니다.
       </Info>
       <EmailIcon>
-        <FontAwesomeIcon icon={faEnvelope} size="10x" />
+        <FontAwesomeIcon icon={faEnvelope} size="8x" />
       </EmailIcon>
       <EmailAddress>june.mintlatte@gmail.com</EmailAddress>
     </ContentsContainer>
