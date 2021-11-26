@@ -11,7 +11,7 @@ const ContentsContainer = styled.div`
   margin: auto;
   width: fit-content;
   height: fit-content;
-  background-color: #ffffff;
+  background-color: ${props => props.theme.color.whiteColor};
   padding: 32px 24px;
   border-radius: 3px;
   text-align: center;

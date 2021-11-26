@@ -71,6 +71,10 @@ const YellName = styled.p`
 const IconContainer = styled.div`
   text-align: center;
 
+  svg {
+    transition: color 0.1s linear;
+  }
+
   svg:hover {
     color: ${props => props.theme.color.mintColor};
   }
@@ -85,7 +89,7 @@ const ContentsContainer = styled.div``;
 const AboutDescription = styled.div`
   position: relative;
   top: 16px;
-  background-color: #ffffff;
+  background-color: ${props => props.theme.color.whiteColor};
   padding: 16px;
   border-radius: 3px;
   box-shadow: 8px 8px ${props => props.theme.color.yellowColor};

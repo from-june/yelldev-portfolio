@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const MarkdownContainer = styled.div`
   width: 514px;
   padding: 16px;
-  background-color: #ffffff;
+  background-color: ${props => props.theme.color.whiteColor};
   border-radius: 3px;
   margin: 0 auto;
   box-shadow: 8px 8px ${props => props.theme.color.mintColor};

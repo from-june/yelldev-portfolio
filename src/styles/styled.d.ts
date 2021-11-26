@@ -7,6 +7,7 @@ declare module 'styled-components' {
       mintColor: string;
       textColor: string;
       bgColor: string;
+      whiteColor: string;
     };
 
     font: {
