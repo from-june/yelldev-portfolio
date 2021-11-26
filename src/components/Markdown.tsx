@@ -2,7 +2,7 @@ import ReactMarkdown from 'react-markdown';
 import styled from 'styled-components';
 
 const MarkdownContainer = styled.div`
-  width: 514px;
+  max-width: 482px;
   padding: 16px;
   background-color: ${props => props.theme.color.whiteColor};
   border-radius: 3px;

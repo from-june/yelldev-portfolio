@@ -21,6 +21,7 @@ const AboutContainer = styled.div`
   @media only screen and (max-width: ${props =>
       props.theme.media.breakPoint650}px) {
     padding: 32px;
+    /* align-items: baseline; */
   }
 `;
 
@@ -106,6 +107,7 @@ const ContentsContainer = styled.div``;
 const AboutDescription = styled.div`
   position: relative;
   top: 16px;
+  max-width: 482px;
   background-color: ${props => props.theme.color.whiteColor};
   padding: 16px;
   border-radius: 3px;
@@ -126,7 +128,6 @@ const AboutTitle = styled.p`
 `;
 
 const AboutYell = styled.p`
-  max-width: 482px;
   font-size: 1.8rem;
   font-weight: 300;
   letter-spacing: -0.1em;
@@ -172,7 +173,7 @@ const About = () => {
             안녕하세요. <span>옐</span> 입니다!
           </AboutTitle>
           <AboutYell>
-            본명은 <strong>박주운</strong> 입니다.
+            본명은&ensp;<strong>박주운</strong> 입니다.
             <br />
             <br />
             개발의 여러 분야 중에서도 <strong>프론트엔드를 택한 것</strong>은,

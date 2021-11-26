@@ -4,11 +4,15 @@ import { Link } from 'react-router-dom';
 
 const HeaderContainer = styled.header`
   position: sticky;
+  top: 0;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 8px 32px;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 5;
+  overflow-x: auto;
 
   & > div {
     max-width: 1440px;

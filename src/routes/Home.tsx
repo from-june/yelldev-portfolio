@@ -4,6 +4,7 @@ import styled, { keyframes } from 'styled-components';
 const Container = styled.div`
   width: 100%;
   height: calc(100vh - 70px);
+  padding: 16px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -73,11 +74,6 @@ const Description = styled.p`
 
     span:last-child {
       font-size: 3.8rem;
-    }
-
-    ::after {
-      width: 64%;
-      margin-left: 38px;
     }
   }
 `;
