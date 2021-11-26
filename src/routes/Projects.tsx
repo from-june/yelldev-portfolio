@@ -9,6 +9,11 @@ const ProjectsContainer = styled.div`
   justify-content: center;
   align-items: center;
   gap: 20px;
+
+  @media only screen and (max-width: ${props =>
+      props.theme.media.breakPoint460}px) {
+    padding: 16px 32px;
+  }
 `;
 
 const Projects = () => {

@@ -16,6 +16,7 @@ export const theme: DefaultTheme = {
   },
 
   media: {
+    breakPoint460: 460,
     breakPoint650: 650,
     breakPoint1115: 1115
   }

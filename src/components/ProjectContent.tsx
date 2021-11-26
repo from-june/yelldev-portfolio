@@ -19,14 +19,27 @@ const ProjectContainer = styled.div`
   width: 400px;
   min-height: 450px;
   border-radius: 3px;
-  padding: 16px 24px;
+  padding: 24px;
   background-color: ${props => props.theme.color.whiteColor};
+
+  @media only screen and (max-width: ${props =>
+      props.theme.media.breakPoint460}px) {
+    width: 300px;
+    min-height: 370px;
+    padding: 16px;
+  }
 `;
 
 const ProjectTitle = styled.p`
   font-family: ${props => props.theme.font.boldFont};
   font-size: 2.4rem;
   margin-bottom: 16px;
+
+  @media only screen and (max-width: ${props =>
+      props.theme.media.breakPoint460}px) {
+    font-size: 2rem;
+    margin-bottom: 8px;
+  }
 `;
 
 const ProjectImg = styled.img`
@@ -52,6 +65,16 @@ const Hashtags = styled.ul`
   li:not(:last-child) {
     margin-right: 8px;
   }
+
+  @media only screen and (max-width: ${props =>
+      props.theme.media.breakPoint460}px) {
+    margin-bottom: 8px;
+
+    li {
+      padding: 4px 8px;
+      font-size: 1rem;
+    }
+  }
 `;
 
 const Description = styled.p`
@@ -60,7 +83,14 @@ const Description = styled.p`
   font-size: 1.6rem;
   font-weight: 300;
   letter-spacing: -0.05em;
+  text-align: justify;
   margin-bottom: 16px;
+
+  @media only screen and (max-width: ${props =>
+      props.theme.media.breakPoint460}px) {
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+  }
 `;
 
 const Icons = styled.div`

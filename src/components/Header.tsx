@@ -19,11 +19,26 @@ const HeaderContainer = styled.header`
     width: 100%;
     display: flex;
   }
+
+  @media only screen and (max-width: ${props =>
+      props.theme.media.breakPoint460}px) {
+    flex-wrap: wrap;
+    padding: 8px 16px;
+
+    & > div {
+      flex-direction: column;
+    }
+  }
 `;
 
 const YellContainer = styled.div`
   position: relative;
   margin-right: 48px;
+
+  @media only screen and (max-width: ${props =>
+      props.theme.media.breakPoint460}px) {
+    margin-right: 0;
+  }
 `;
 
 const Yell = styled.h1`
@@ -33,6 +48,13 @@ const Yell = styled.h1`
   font-weight: 900;
   font-style: italic;
   margin-right: 5px;
+
+  @media only screen and (max-width: ${props =>
+      props.theme.media.breakPoint460}px) {
+    width: 100%;
+    font-size: 3rem;
+    text-align: center;
+  }
 `;
 
 const Dot = styled.div`
@@ -45,6 +67,14 @@ const Dot = styled.div`
   height: 10px;
   border-radius: 50%;
   background-color: ${props => props.theme.color.mintColor};
+
+  @media only screen and (max-width: ${props =>
+      props.theme.media.breakPoint460}px) {
+    width: 6px;
+    height: 6px;
+    top: 28px;
+    left: calc(50% + 28px);
+  }
 `;
 
 const HeaderList = styled.ul`
@@ -53,6 +83,16 @@ const HeaderList = styled.ul`
   font-family: ${props => props.theme.font.enFont};
   font-weight: 300;
   margin-right: auto;
+
+  @media only screen and (max-width: ${props =>
+      props.theme.media.breakPoint460}px) {
+    margin-left: auto;
+    font-size: 1.6rem;
+
+    & li:first-child a {
+      margin-left: 0;
+    }
+  }
 `;
 
 const HeaderItem = styled.li<{ isActive: boolean }>`
@@ -73,6 +113,11 @@ const HeaderItem = styled.li<{ isActive: boolean }>`
     :hover {
       color: ${props => props.theme.color.mintColor};
     }
+  }
+
+  @media only screen and (max-width: ${props =>
+      props.theme.media.breakPoint460}px) {
+    height: 40px;
   }
 `;
 

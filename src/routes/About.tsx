@@ -15,13 +15,12 @@ const AboutContainer = styled.div`
       props.theme.media.breakPoint1115}px) {
     flex-direction: column;
     align-items: center;
-    padding: 64px;
+    padding: 32px 64px;
   }
 
   @media only screen and (max-width: ${props =>
       props.theme.media.breakPoint650}px) {
     padding: 32px;
-    /* align-items: baseline; */
   }
 `;
 
@@ -48,6 +47,13 @@ const YellImg = styled.img<IYellImg>`
   left: 29px;
   z-index: 2;
   margin-bottom: 64px;
+
+  @media only screen and (max-width: ${props =>
+      props.theme.media.breakPoint650}px) {
+    width: 180px;
+    left: 22px;
+    margin-bottom: 48px;
+  }
 `;
 
 const ImgBack = styled.div`
@@ -72,6 +78,20 @@ const ImgBack = styled.div`
     border-radius: 50%;
     background-color: ${props => props.theme.color.mintColor};
   }
+
+  @media only screen and (max-width: ${props =>
+      props.theme.media.breakPoint650}px) {
+    top: 31px;
+    width: 190px;
+    height: 190px;
+
+    ::after {
+      width: 100px;
+      height: 100px;
+      top: 7px;
+      right: -28px;
+    }
+  }
 `;
 
 const YellName = styled.p`
@@ -84,10 +104,33 @@ const YellName = styled.p`
   font-style: italic;
   font-weight: 900;
   text-align: center;
+
+  @media only screen and (max-width: ${props =>
+      props.theme.media.breakPoint1115}px) {
+    display: none;
+  }
 `;
 
 const IconContainer = styled.div`
   text-align: center;
+
+  @media only screen and (max-width: ${props =>
+      props.theme.media.breakPoint1115}px) {
+    font-size: 0.7rem;
+    border-top: 1px solid ${props => props.theme.color.textColor};
+    padding-top: 16px;
+  }
+
+  @media only screen and (max-width: ${props =>
+      props.theme.media.breakPoint650}px) {
+    font-size: 0.6rem;
+  }
+
+  @media only screen and (max-width: ${props =>
+      props.theme.media.breakPoint460}px) {
+    font-size: 0.5rem;
+    padding-top: 8px;
+  }
 
   svg {
     transition: color 0.1s linear;
@@ -125,6 +168,16 @@ const AboutTitle = styled.p`
     font-size: 4rem;
     color: ${props => props.theme.color.yellowColor};
   }
+
+  @media only screen and (max-width: ${props =>
+      props.theme.media.breakPoint650}px) {
+    font-size: 2.4rem;
+    margin-bottom: 16px;
+
+    span {
+      font-size: 3.2rem;
+    }
+  }
 `;
 
 const AboutYell = styled.p`
@@ -140,6 +193,11 @@ const AboutYell = styled.p`
 
   strong:first-child {
     color: ${props => props.theme.color.mintColor};
+  }
+
+  @media only screen and (max-width: ${props =>
+      props.theme.media.breakPoint650}px) {
+    font-size: 1.6rem;
   }
 `;
 

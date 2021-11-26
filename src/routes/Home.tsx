@@ -29,7 +29,7 @@ const underline = keyframes`
   0% {
     width: 0;
   } 100% {
-    width: 61%;
+    width: 100%;
   }
 `;
 
@@ -54,7 +54,7 @@ const Description = styled.p`
   ::after {
     display: block;
     content: '';
-    width: 61%;
+    width: 350px;
     height: 5px;
     position: relative;
     margin-top: -10px;
@@ -67,6 +67,8 @@ const Description = styled.p`
   @media only screen and (max-width: ${props =>
       props.theme.media.breakPoint650}px) {
     font-size: 2.8rem;
+    text-align: start;
+    letter-spacing: -0.08em;
 
     span:nth-child(2) {
       font-size: 3.2rem;
@@ -74,6 +76,11 @@ const Description = styled.p`
 
     span:last-child {
       font-size: 3.8rem;
+    }
+
+    ::after {
+      margin-left: -5px;
+      width: 270px;
     }
   }
 `;

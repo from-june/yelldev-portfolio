@@ -17,6 +17,7 @@ declare module 'styled-components' {
     };
 
     media: {
+      breakPoint460: number;
       breakPoint650: number;
       breakPoint1115: number;
     };
