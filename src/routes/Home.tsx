@@ -23,6 +23,13 @@ const YellImg = styled.img<IYellImg>`
   border-radius: 50%;
   margin: 0 auto;
   margin-bottom: 24px;
+
+  @media only screen and (max-width: ${props =>
+      props.theme.media.breakPoint460}px) {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 16px;
+  }
 `;
 
 const underline = keyframes`
@@ -81,6 +88,26 @@ const Description = styled.p`
     ::after {
       margin-left: -5px;
       width: 270px;
+    }
+  }
+
+  @media only screen and (max-width: ${props =>
+      props.theme.media.breakPoint460}px) {
+    font-size: 2.3rem;
+
+    span:nth-child(2) {
+      font-size: 2.7rem;
+    }
+
+    span:last-child {
+      font-size: 3.1rem;
+    }
+
+    ::after {
+      height: 3px;
+      margin-top: -8px;
+      margin-left: 0;
+      width: 215px;
     }
   }
 `;
