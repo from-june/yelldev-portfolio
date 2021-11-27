@@ -5,6 +5,7 @@ import Home from 'routes/Home';
 import About from 'routes/About';
 import Contact from 'routes/Contact';
 import Projects from 'routes/Projects';
+import Copyrights from 'components/Copyrights';
 
 const Router = () => (
   <HashRouter>
@@ -16,6 +17,7 @@ const Router = () => (
       <Route path="/projects" element={<Projects />} />
       <Route path="/contact" element={<Contact />} />
     </Routes>
+    <Copyrights />
   </HashRouter>
 );
 
