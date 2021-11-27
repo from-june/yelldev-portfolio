@@ -44,6 +44,7 @@ const EmailIcon = styled.div`
   border-top: 1px solid ${props => props.theme.color.bgColor};
   padding-top: 16px;
   color: ${props => props.theme.color.yellowColor};
+  margin-bottom: 8px;
 
   @media only screen and (max-width: ${props =>
       props.theme.media.breakPoint460}px) {
@@ -55,7 +56,7 @@ const EmailAddress = styled.p`
   font-family: ${props => props.theme.font.enFont};
   font-size: 2rem;
   font-weight: 700;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.01em;
 
   @media only screen and (max-width: ${props =>
       props.theme.media.breakPoint460}px) {

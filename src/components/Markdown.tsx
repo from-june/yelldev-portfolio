@@ -20,7 +20,7 @@ const MarkdownText = styled.p`
     font-family: ${props => props.theme.font.nomalFont};
     font-size: 1.4rem;
     font-weight: 300;
-    letter-spacing: -0.1em;
+    letter-spacing: -0.05em;
     text-decoration: underline;
   }
 `;

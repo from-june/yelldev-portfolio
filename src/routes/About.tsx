@@ -183,7 +183,7 @@ const AboutTitle = styled.p`
 const AboutYell = styled.p`
   font-size: 1.8rem;
   font-weight: 300;
-  letter-spacing: -0.1em;
+  letter-spacing: -0.05em;
   text-align: justify;
 
   strong {
@@ -231,7 +231,7 @@ const About = () => {
             안녕하세요. <span>옐</span> 입니다!
           </AboutTitle>
           <AboutYell>
-            본명은&ensp;<strong>박주운</strong> 입니다.
+            본명은 <strong>박주운</strong> 입니다.
             <br />
             <br />
             개발의 여러 분야 중에서도 <strong>프론트엔드를 택한 것</strong>은,
