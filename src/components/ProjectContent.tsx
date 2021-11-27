@@ -137,9 +137,11 @@ const ProjectContent = ({
         <a href={links.web} target="_blank" rel="noreferrer">
           <FontAwesomeIcon icon={faLink} size="4x" />
         </a>
-        <a href={links.github} target="_blank" rel="noreferrer">
-          <FontAwesomeIcon icon={faGithub} size="4x" />
-        </a>
+        {links.github === '' ? null : (
+          <a href={links.github} target="_blank" rel="noreferrer">
+            <FontAwesomeIcon icon={faGithub} size="4x" />
+          </a>
+        )}
       </Icons>
     </ProjectContainer>
   );

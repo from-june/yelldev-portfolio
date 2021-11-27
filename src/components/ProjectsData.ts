@@ -10,7 +10,7 @@ const ProjectsData = [
     img_src: `${wanwol}`,
     hashtags: ['HTML', 'CSS', 'JavaScript'],
     description:
-      '웹디자이너와 협업하여 만든 반응형 아카이브 사이트 (해당 사이트는 깃허브가 공개되어 있지 않음)',
+      '웹디자이너와 협업하여 만든 반응형 아카이브 사이트',
     links: {
       web: 'http://www.wanwolremind.co.kr/',
       github: ''
