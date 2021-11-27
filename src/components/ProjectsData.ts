@@ -9,7 +9,8 @@ const ProjectsData = [
     title: '완월-로드:길을 열다 2021',
     img_src: `${wanwol}`,
     hashtags: ['HTML', 'CSS', 'JavaScript'],
-    description: '웹디자이너와 협업하여 만든 반응형 아카이브 사이트',
+    description:
+      '웹디자이너와 협업하여 만든 반응형 아카이브 사이트 (해당 사이트는 깃허브가 공개되어 있지 않음)',
     links: {
       web: 'http://www.wanwolremind.co.kr/',
       github: ''
