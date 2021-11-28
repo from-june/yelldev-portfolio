@@ -81,7 +81,7 @@ const Description = styled.p`
   border-top: 1px solid ${props => props.theme.color.yellowColor};
   padding-top: 8px;
   font-size: 1.6rem;
-  font-weight: 300;
+  font-weight: 200;
   letter-spacing: -0.05em;
   text-align: justify;
   margin-bottom: 16px;

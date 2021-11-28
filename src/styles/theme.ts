@@ -10,7 +10,7 @@ export const theme: DefaultTheme = {
   },
 
   font: {
-    nomalFont: `'Noto Sans KR', sans-serif;`,
+    nomalFont: `'Pretendard Variable', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;`,
     boldFont: `'Black Han Sans', sans-serif;`,
     enFont: `'Nunito Sans', sans-serif;`
   },

@@ -24,7 +24,7 @@ const ContentsContainer = styled.div`
 
 const Info = styled.p`
   font-size: 1.8rem;
-  font-weight: 300;
+  font-weight: 200;
   letter-spacing: -0.05em;
   margin-bottom: 16px;
 

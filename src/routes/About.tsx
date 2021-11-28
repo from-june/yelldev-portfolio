@@ -182,7 +182,7 @@ const AboutTitle = styled.p`
 
 const AboutYell = styled.p`
   font-size: 1.8rem;
-  font-weight: 300;
+  font-weight: 200;
   letter-spacing: -0.05em;
   text-align: justify;
 
