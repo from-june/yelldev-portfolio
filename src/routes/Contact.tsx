@@ -36,7 +36,7 @@ const Info = styled.p`
 
   @media only screen and (max-width: ${props =>
       props.theme.media.breakPoint460}px) {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     margin-bottom: 8px;
   }
 `;
@@ -61,7 +61,7 @@ const EmailAddress = styled.p`
 
   @media only screen and (max-width: ${props =>
       props.theme.media.breakPoint460}px) {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
 `;
 

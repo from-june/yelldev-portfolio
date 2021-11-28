@@ -72,7 +72,7 @@ const Hashtags = styled.ul`
 
     li {
       padding: 4px 8px;
-      font-size: 1rem;
+      font-size: 1.2rem;
     }
   }
 `;
@@ -88,7 +88,7 @@ const Description = styled.p`
 
   @media only screen and (max-width: ${props =>
       props.theme.media.breakPoint460}px) {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     margin-bottom: 8px;
   }
 `;
