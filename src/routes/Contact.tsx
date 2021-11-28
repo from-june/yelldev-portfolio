@@ -30,6 +30,7 @@ const Info = styled.p`
 
   strong {
     color: ${props => props.theme.color.mintColor};
+    font-weight: 600;
     text-decoration: underline;
   }
 
