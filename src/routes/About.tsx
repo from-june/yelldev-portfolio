@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import yellAbout from 'images/about_yell.png';
 import Markdown from 'components/Markdown';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithubSquare, faBlogger } from '@fortawesome/free-brands-svg-icons';
@@ -205,7 +204,7 @@ const About = () => {
   return (
     <AboutContainer>
       <ImgContainer>
-        <YellImg src={yellAbout} alt="옐" />
+        <YellImg src="/assets/about_yell.png" alt="옐" />
         <ImgBack />
         <YellName>yell</YellName>
         <IconContainer>

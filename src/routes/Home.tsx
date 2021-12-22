@@ -1,4 +1,3 @@
-import yellAvatar from 'images/yell.png';
 import styled, { keyframes } from 'styled-components';
 
 const Container = styled.div`
@@ -114,7 +113,7 @@ const Description = styled.p`
 
 const Home = () => (
   <Container>
-    <YellImg src={yellAvatar} alt="옐" />
+    <YellImg src="/assets/yell.png" alt="옐" />
     <Description>
       원하는 기능을 구현하기 위해 고군분투하는
       <br />
