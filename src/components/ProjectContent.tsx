@@ -4,8 +4,8 @@ import { faLink } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 interface IProjectContent {
+  id: number;
   title: string;
-  imgSrc: string;
   hashtags: string[];
   description: string;
   links: {
@@ -117,15 +117,15 @@ const Icons = styled.div`
 `;
 
 const ProjectContent = ({
+  id,
   title,
-  imgSrc,
   hashtags,
   description,
   links
 }: IProjectContent) => {
   return (
     <ProjectContainer>
-      <ProjectImg src={imgSrc} />
+      <ProjectImg src={`/assets/projects/${id}.png`} alt={title} />
       <ProjectTitle>{title}</ProjectTitle>
       <Hashtags>
         {hashtags.map((tag, index) => (
