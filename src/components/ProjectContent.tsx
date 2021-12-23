@@ -12,6 +12,7 @@ interface IProjectContent {
     web: string;
     github?: string;
   };
+  thumbnail: string;
 }
 
 const ProjectContainer = styled.div`
@@ -121,11 +122,12 @@ const ProjectContent = ({
   title,
   hashtags,
   description,
-  links
+  links,
+  thumbnail
 }: IProjectContent) => {
   return (
     <ProjectContainer>
-      <ProjectImg src={`/assets/projects/${id}.png`} alt={title} />
+      <ProjectImg src={thumbnail} alt={title} />
       <ProjectTitle>{title}</ProjectTitle>
       <Hashtags>
         {hashtags.map((tag, index) => (

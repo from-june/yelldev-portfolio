@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import ProjectContent from 'components/ProjectContent';
-import ProjectsData from 'components/ProjectsData';
+import ProjectsData from 'data/ProjectsData.json';
 
 const ProjectsContainer = styled.div`
   padding: 32px 64px;
@@ -28,6 +28,7 @@ const Projects = () => {
           hashtags={project.hashtags}
           description={project.description}
           links={project.links}
+          thumbnail={project.thumbnail}
         />
       ))}
     </ProjectsContainer>
@@ -35,3 +36,7 @@ const Projects = () => {
 };
 
 export default Projects;
+
+/*
+        
+*/
