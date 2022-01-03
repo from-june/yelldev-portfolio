@@ -40,24 +40,23 @@ interface IYellImg {
 
 const YellImg = styled.img<IYellImg>`
   display: block;
-  width: 250px;
+  width: 300px;
   height: auto;
   position: relative;
-  left: 29px;
   z-index: 2;
   margin-bottom: 64px;
 
   @media only screen and (max-width: ${props =>
       props.theme.media.breakPoint650}px) {
-    width: 180px;
-    left: 22px;
+    width: 220px;
     margin-bottom: 48px;
   }
 `;
 
 const ImgBack = styled.div`
   position: absolute;
-  top: 50px;
+  top: 79px;
+  left: 19px;
   display: block;
   content: '';
   width: 260px;
@@ -68,27 +67,28 @@ const ImgBack = styled.div`
 
   ::after {
     position: absolute;
-    top: -10px;
-    right: -50px;
+    top: -30px;
+    right: -30px;
     display: block;
     content: '';
-    width: 150px;
-    height: 150px;
+    width: 130px;
+    height: 130px;
     border-radius: 50%;
     background-color: ${props => props.theme.color.mintColor};
   }
 
   @media only screen and (max-width: ${props =>
       props.theme.media.breakPoint650}px) {
-    top: 31px;
-    width: 190px;
-    height: 190px;
+    top: 46px;
+    left: 10px;
+    width: 200px;
+    height: 200px;
 
     ::after {
-      width: 100px;
-      height: 100px;
-      top: 7px;
-      right: -28px;
+      width: 80px;
+      height: 80px;
+      top: 3px;
+      right: -10px;
     }
   }
 `;
