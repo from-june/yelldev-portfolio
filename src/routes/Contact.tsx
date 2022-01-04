@@ -41,7 +41,7 @@ const Info = styled.p`
   }
 `;
 
-const EmailIcon = styled.div`
+const Email = styled.div`
   border-top: 1px solid ${props => props.theme.color.bgColor};
   padding-top: 16px;
   color: ${props => props.theme.color.yellowColor};
@@ -55,9 +55,11 @@ const EmailIcon = styled.div`
 
 const EmailAddress = styled.p`
   font-family: ${props => props.theme.font.enFont};
+  color: ${props => props.theme.color.textColor};
   font-size: 2rem;
   font-weight: 700;
   letter-spacing: -0.01em;
+  margin-top: 8px;
 
   @media only screen and (max-width: ${props =>
       props.theme.media.breakPoint460}px) {
@@ -73,10 +75,12 @@ const Contact = () => {
         <br />
         아래 <strong>이메일</strong>로 연락 바랍니다.
       </Info>
-      <EmailIcon>
-        <FontAwesomeIcon icon={faEnvelope} size="8x" />
-      </EmailIcon>
-      <EmailAddress>june.mintlatte@gmail.com</EmailAddress>
+      <Email>
+        <a href="mailto:june.mintlatte@gmail.com">
+          <FontAwesomeIcon icon={faEnvelope} size="8x" />
+          <EmailAddress>june.mintlatte@gmail.com</EmailAddress>
+        </a>
+      </Email>
     </ContentsContainer>
   );
 };
